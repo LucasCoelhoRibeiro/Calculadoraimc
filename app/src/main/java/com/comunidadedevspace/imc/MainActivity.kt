@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -10,13 +11,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //Recuperar os componentes edittext
-        //criar uma variavel e associar(=) o componente de UI <edittext>
-        //Recuperar o botao da tela
-
-        //colocar acao no botao setonclicklistener
-        //recuperar o texto digitado no edt peso
 
         val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
@@ -30,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             val alturaStr: String = edtAltura.text.toString()
 
             if (pesoStr == "" || alturaStr == "") {
-                //Mostrar mensagem para o usuario
                 Snackbar
                     .make(
                         edtPeso,
@@ -46,8 +39,18 @@ class MainActivity : AppCompatActivity() {
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
 
+                //Navegar para a proxima tela
+                //criar o layout da proxima tela
+                //passar dados(resultado) para a proxima tela
+
+                //intent - classe do proprio android  (serve para declarar alguma coisa no proprio sistema operacional do android)
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
+                startActivity(intent)
+
                 println("Lucas acao do botao" + resultado)
             }
         }
     }
-}
+ }
