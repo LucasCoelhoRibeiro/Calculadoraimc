@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_400">#cd00ea</color>
+    <color name="primary_900">#5c00d2</color>
+
+    <color name="magreza">#FF0000</color>
+    <color name="normal">#00FF00</color>
+    <color name="sobrepeso">#FFD700</color>
+    <color name="obedidade">#FF8C00</color>
+    <color name="obesidade_grave">#FF0000</color>
+
+
 </resources>

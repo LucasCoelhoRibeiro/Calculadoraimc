@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">calculadoraimc</string>
+
+    <string name="imc_result">classificacao</string>
 </resources>
