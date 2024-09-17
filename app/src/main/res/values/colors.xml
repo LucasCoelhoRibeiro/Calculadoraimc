@@ -6,6 +6,10 @@
     <color name="primary_400">#cd00ea</color>
     <color name="primary_900">#5c00d2</color>
 
+    <color name="gradient1">#054f77</color>
+    <color name="gradient2">#00d3e3</color>
+
+
     <color name="magreza">#FF0000</color>
     <color name="normal">#00FF00</color>
     <color name="sobrepeso">#FFD700</color>
